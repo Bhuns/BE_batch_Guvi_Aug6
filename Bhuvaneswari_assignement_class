@@ -1,0 +1,41 @@
+"""
+Crating Base class and child class. 
+check if the marks are pass are fail"
+
+
+
+class HighSchool:
+    def __init__(self):
+        self.pass_mark = 40
+
+    def variable_define(self):
+        pass_mark = 40
+
+class StudentMark(HighSchool):
+    def marks(self, a, b, c, d):
+        self.eng = a
+        if a >= self.pass_mark:
+            print("Pass in English")
+        else:
+            print("Fail")
+        self.maths = b
+        if b >= self.pass_mark:
+            print("Pass in maths")
+        else:
+            print("Fail")
+        self.sci = c
+        if c >= self.pass_mark:
+            print("Pass in science")
+        else:
+            print("Fail")
+        self.soc = d
+        if d >= self.pass_mark:
+            print("Pass in social")
+        else:
+            print("Fail")
+
+obj1 = StudentMark()
+obj1.marks(45, 67, 18, 54)
+
+
+
