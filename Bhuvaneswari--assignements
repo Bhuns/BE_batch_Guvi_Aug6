@@ -1,0 +1,119 @@
+"""
+finding a particular number in a array
+""""""
+
+a=input()
+
+for i in range(0, len(a)):
+    
+   
+    if a[i]=="5":
+        print("the index of 5 is ", i)
+        break
+
+
+
+
+"""
+Parent class and Child Class
+"""
+class HighSchool:
+    def __init__(self):
+        self.pass_mark = 40
+
+    def variable_define(self):
+        pass_mark = 40
+
+class StudentMark(HighSchool):
+    def marks(self, a, b, c, d):
+        self.eng = a
+        if a >= self.pass_mark:
+            print("Pass in English")
+        else:
+            print("Fail")
+        self.maths = b
+        if b >= self.pass_mark:
+            print("Pass in maths")
+        else:
+            print("Fail")
+        self.sci = c
+        if c >= self.pass_mark:
+            print("Pass in science")
+        else:
+            print("Fail")
+        self.soc = d
+        if d >= self.pass_mark:
+            print("Pass in social")
+        else:
+            print("Fail")
+
+obj1 = StudentMark()
+obj1.marks(45, 67, 18, 54)
+
+
+
+
+
+"""
+Calculator using class
+"""
+class calculator:
+    a= int(input())
+    b= int(input())
+    def __init__(self):
+        pass
+
+    def add (self):
+        c= self.a + self.b
+        print (c)
+    def subtract (self):
+        c= self.a - self.b
+        print (c)
+    def multiply (self):
+        c= self.a * self.b
+        print (c)
+    def divi (self):
+        c= self.a // self.b
+        print (c)
+
+calc= calculator()
+calc.add()
+calc.subtract()
+calc.multiply()
+calc.divi()
+
+
+
+ """
+palindrome
+"""
+
+a= input()
+b=len(a)
+d=[]
+for i in range(b-1,-1,-1):
+  print(a[i])
+  print (i)
+  d.append(a[i])
+  
+print(list(d))
+if list(d)==list(a):
+  print ("palindron")
+else :
+  print ("not palindrome")
+
+
+
+
+"""
+reverse string using loop
+"""
+
+a= input()
+b=len(a)
+d=[]
+for i in range(b-1,-1,-1):
+   
+    d.append(a[i])
+    c="".join(d)
+print(c)
